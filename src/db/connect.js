@@ -1,5 +1,6 @@
 const mongoose = require('mongoose'); 
-const CONNECTION_STRING = require('./constants');
+const CONNECTION_STRING = require('./constants').CONNECTION_STRING;
+console.log(CONNECTION_STRING);
 mongoose.connect(CONNECTION_STRING , {useNewUrlParser: true , useUnifiedTopology: true })
 
 const db  = mongoose.connection 
