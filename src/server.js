@@ -1,15 +1,6 @@
 const { ApolloServer, gql } = require("apollo-server");
 
-const users = [
-    {
-      id: '1',
-      name: 'Elizabeth Bennet'
-    },
-    {
-      id: '2',
-      name: 'Fitzwilliam Darcy'
-    }
-  ]
+
 
 const typeDefs = gql`
 
