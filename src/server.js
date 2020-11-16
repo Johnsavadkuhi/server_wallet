@@ -4,15 +4,11 @@ const { ApolloServer, gql } = require("apollo-server");
 
 const typeDefs = gql`
 
-type User {
-    id:ID! 
-    name:String!
-}
+
 
  type Query{
      numberSix:Int!
      hello:String!
-     user(id:ID!):User
   }
 
 
@@ -25,10 +21,7 @@ const resolvers = {
       numberSix : () => 6  , 
       hello:  () => "hello world ",
 
-      user (parent , args , context , info  ){
-
-        return users.find(user => user.id === args.id) 
-      }
+     
 },
 
 };
