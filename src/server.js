@@ -4,8 +4,6 @@ const { ApolloServer, gql } = require("apollo-server");
 
 const typeDefs = gql`
 
-
-
  type Query{
      numberSix:Int!
      hello:String!
